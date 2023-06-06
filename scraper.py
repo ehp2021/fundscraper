@@ -18,7 +18,7 @@ articles = soup.find_all("article")
 for article in articles:
     title = article.find("h3").text
     link = article.find("a")["href"]
-    description = article.find("p").text
+    #description = article.find("p").text
 
     # Extract other relevant information from the article as needed
 
@@ -27,6 +27,6 @@ for article in articles:
     doc_ref.set({
         "title": title,
         "link": link,
-        "description": description,
+        #"description": description,
         # Add other relevant fields to the document
     })
