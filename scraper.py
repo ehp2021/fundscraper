@@ -1,3 +1,13 @@
+# PROGRESS STATUS
+import time
+import sys
+
+for i in range(100):
+    time.sleep(1)
+    sys.stdout.write("\r%d%%" % i)
+    sys.stdout.flush()
+
+# scraper starts here
 import requests
 from bs4 import BeautifulSoup
 import firebase_admin
@@ -18,6 +28,7 @@ articles = soup.find_all("article")
 for article in articles:
     title = article.find("h3").text
     link = article.find("a")["href"]
+    time = article.find("time")["datetime"]
     #description = article.find("p").text
 
     # Extract other relevant information from the article as needed
@@ -27,6 +38,7 @@ for article in articles:
     doc_ref.set({
         "title": title,
         "link": link,
+        "time": time,
         #"description": description,
         # Add other relevant fields to the document
     })
