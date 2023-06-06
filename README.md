@@ -1,6 +1,6 @@
 # fundscraper
 
-Just a side project I built to pull in news around "Series A" funding from Google News and save down certain pieces of information to FireStore
+Just a side project I built to pull in news around "Series A" funding from Google News and save down certain pieces of information to FireStore. I will add some more palatable frontend functionality soon, i.e. HTML page that shows the scraped Firestore data in a cute little table
 
 ## When you run scraper.py
 
