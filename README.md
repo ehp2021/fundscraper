@@ -8,7 +8,7 @@ I'm still looking for the right serverless computing setup to automate this proc
 
 You should see all the news article titles and links show up in your Firestore like this:
 
-![screenshot](https://github.com/ehp2021/zims/blob/main/screenshot1.png)
+![screenshot](https://github.com/ehp2021/fundscraper/blob/main/db.png)
 
 ## To set up Firestore
 
